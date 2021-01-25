@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  display: grid;
+  grid-template-columns:  50% 50%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: 
+        "header header"
+        "section main";
+}
+
+section {
+  grid-area: section;
+  background: white;
+  margin-top: -23rem;
+  
+}
+
+main {
+  grid-area: main;
+  background: white;
+  margin-top: -22rem;
+}
+
+.project4-image1 {
+  height: 19rem;
+  width: 35rem;
+  margin-left: 20px;
+  margin-top: 2rem;
+}
+
+.background {
+  background-color: #282f3a;
+  width: 50%;
+}
+
+h1 {
+  margin-left: 9rem;
+  margin-top: 2rem;
+}
+
+h3 {
+  margin-top: 4rem;
+}
+
+p {
+  margin-right: 11rem;
+}
+
+.github-container {
+  margin-top: 5rem;
+  margin-left: 14rem;
+  width: .2rem;
+  height: .2rem;
+}
+
+.github:hover {
+  font-size: 13px;
+  color: #0000EE;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 812px) {
+  body {
+    margin: 0;
+  display: grid;
+  grid-template-columns:  50% 50%;
+  grid-template-rows: 50% 100% 50%;
+  grid-template-areas: 
+        "header header"
+        "section section"
+        "main  main";
+  }
+  main{
+    margin-top: .1rem;
+  }
+
+  h1 {
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
+  
+  p {
+    
+    margin-left: 3rem;
+  }
+  
+  h3 {
+    margin-top: 4rem;
+    margin-left: 3rem;
+    
+  }
+  
+  .github-container {
+    margin-top: 5rem;
+    margin-left: 3rem;
+    margin-bottom: 5rem;
+    width: .2rem;
+    height: .2rem;
+  }
+  
+  .github:hover {
+    font-size: 13px;
+    color: yellow;
+    font-size: 16px;
+  }
+}
